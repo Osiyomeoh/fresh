@@ -1,0 +1,80 @@
+{
+  "name": "demo-react",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@headlessui/react": "^1.6.6",
+    "@heroicons/react": "^1.0.6",
+    "@slashauth/slashauth-react": "^1.5.0",
+    "@tailwindcss/forms": "^0.5.2",
+    "@testing-library/jest-dom": "^5.16.4",
+    "@testing-library/react": "^13.3.0",
+    "@testing-library/user-event": "^13.5.0",
+    "@types/jest": "^27.5.2",
+    "@types/node": "^16.11.45",
+    "@types/react": "^18.0.15",
+    "@types/react-dom": "^18.0.6",
+    "ethers": "^5.7.1",
+    "react": "^18.2.0",
+    "react-datepicker": "^4.8.0",
+    "react-dom": "^18.2.0",
+    "react-dropzone": "^14.2.2",
+    "react-hot-toast": "^2.3.0",
+    "react-icons": "^4.4.0",
+    "react-modal": "^3.15.1",
+    "react-pdf": "^5.7.2",
+    "react-router-dom": "^6.3.0",
+    "react-scripts": "5.0.1",
+    "react-tooltip": "^4.2.21",
+    "tailwind": "^4.0.0",
+    "tailwindcss": "^3.1.6",
+    "uuid": "^8.3.2",
+    "wagmi": "^0.11.4",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "dev": "react-scripts start",
+    "start": "REACT_APP_ENVIRONMENT=prod react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "build-prod": "NODE_ENV=prod npx env-cmd -f ./.env.prod npx react-scripts build",
+    "lint": "npx eslint --ext .ts --ext .tsx --max-warnings 0 ./src",
+    "lint-fix": "npx eslint --ext .ts --ext .tsx --max-warnings 0 --fix ./src",
+    "preinstall": "husky install"
+  },
+  "lint-staged": {
+    "!(src/graphql/*)*.{ts,tsx}": [
+      "prettier --write",
+      "npx eslint --ext .ts --ext .tsx --fix --max-warnings 0 --"
+    ]
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@types/react-datepicker": "^4.4.2",
+    "@types/react-pdf": "^5.7.2",
+    "@types/uuid": "^8.3.4",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "husky": "^8.0.1",
+    "prettier": "^2.7.1",
+    "typescript": "^4.9.5"
+  }
+}

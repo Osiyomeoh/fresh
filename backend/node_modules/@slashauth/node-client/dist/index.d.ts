@@ -1,0 +1,1 @@
+export { SlashauthClient } from './client';

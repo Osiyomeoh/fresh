@@ -1,0 +1,1 @@
+export { SlashauthMiddlewareExpress } from './middleware';

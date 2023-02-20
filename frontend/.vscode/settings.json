@@ -1,0 +1,20 @@
+{
+  "editor.tabSize": 2,
+  "prettier.configPath": ".prettierrc",
+  "prettier.printWidth": 120,
+  "prettier.requireConfig": true,
+  "editor.formatOnSave": true,
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "cSpell.words": [
+    "firestore",
+    "Navvi"
+  ]
+}

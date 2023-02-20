@@ -1,0 +1,67 @@
+{
+  "id": "mxsD",
+  "slug": "token-release-request",
+  "name": "Orange DAO Token Release Request",
+  "description": "Only use this form for tokens from approved Proposals and existing budgets. (Not for new spending!)\n\nIf there are multiple payments (EG: Multiple OIPs) please note that clearly in the requested tokens field or create a new TRR per OIP so we can verify the request.\n\nAll data in this form will be visible to the DAO.",
+  "fields": [
+    {
+      "id": "req_name",
+      "name": "Requester Name",
+      "description": "Nickname is fine as long as we can properly identify you.",
+      "type": "text_input",
+      "required": true
+    },
+    {
+      "id": "req_email",
+      "name": "Requester Email",
+      "description": "This is where we will send updates regarding this TR.",
+      "type": "email_input"
+    },
+    {
+      "id": "req_discord_id",
+      "name": "Requester Discord ID",
+      "description": "For the very important request verification step.",
+      "type": "text_input",
+      "required": true
+    },
+    {
+      "id": "oip",
+      "name": "OIP or Project Name",
+      "description": "What proposal authorizes these tokens?",
+      "type": "text_input",
+      "required": true
+    },
+    {
+      "id": "req_tokens",
+      "name": "Requested Tokens",
+      "description": "List the token type and number of tokens please.",
+      "type": "text_area",
+      "required": true
+    },
+    {
+      "id": "dest_wallet",
+      "name": "Destination Wallet Address",
+      "description": "If not listed in proposal or requesting a change. Requires manual verification.",
+      "type": "text_input"
+    },
+    {
+      "id": "assigned_to",
+      "name": "Assigned To",
+      "description": "Which committee is overseeing your proposal? This routes the request to the right people in the DAO. DAO Org Chart: https://orgchart.timeisltd.com/s/sc8GGCVMFW8ilNsfoDAG",
+      "type": "select",
+      "options": [
+        "Unassigned",
+        "Development",
+        "Governance",
+        "Treasury"
+      ],
+      "required": true
+    },
+    {
+      "id": "notes",
+      "name": "Notes",
+      "description": "Anything else you want to add?",
+      "type": "text_area"
+    }
+  ]
+}

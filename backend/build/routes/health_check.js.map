@@ -1,0 +1,1 @@
+{"version":3,"file":"health_check.js","sourceRoot":"","sources":["../../src/routes/health_check.ts"],"names":[],"mappings":";;;AAEO,MAAM,WAAW,GAAY,KAAK,EAAE,CAAC,EAAE,QAAQ,EAAE,EAAE;IACxD,OAAO,QAAQ,CAAC,MAAM,CAAC,GAAG,CAAC,CAAC,IAAI,CAAC,EAAE,OAAO,EAAE,IAAI,EAAE,CAAC,CAAC;AACtD,CAAC,CAAC;AAFW,QAAA,WAAW,eAEtB"}
